@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PatientForm';
+  Roles: any = ['Admin', 'Author', 'Reader'];
+  selected = 0;
+
+  register(form) {
+    console.log(form.value);
+  }
 }
